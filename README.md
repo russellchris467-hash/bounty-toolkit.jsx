@@ -24,3 +24,10 @@ claude mcp add --transport http htb-mcp-ctf https://mcp.hackthebox.ai/v1/ctf/mcp
 
 For Claude Code on the web, add `HTB_MCP_TOKEN` as an environment variable/secret
 in the cloud environment settings.
+
+### VS Code
+
+`.vscode/mcp.json` registers the same server using VS Code's `servers` format.
+The token is a `promptString` input with `password: true`: VS Code asks for it
+the first time the server starts and stores it securely. Don't replace
+`${input:htb-api-token}` with the raw token, because this file is committed.

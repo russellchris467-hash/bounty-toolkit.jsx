@@ -1,0 +1,17 @@
+{
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "htb-api-token",
+      "description": "Hack The Box API token",
+      "password": true
+    }
+  ],
+  "servers": {
+    "htb-mcp-ctf": {
+      "url": "https://mcp.hackthebox.ai/v1/ctf/mcp/",
+      "type": "http",
+      "headers": { "Authorization": "Bearer ${input:htb-api-token}" }
+    }
+  }
+}
