@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "htb-mcp-ctf": {
+      "type": "http",
+      "url": "https://mcp.hackthebox.ai/v1/ctf/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${HTB_MCP_TOKEN}"
+      }
+    }
+  }
+}
